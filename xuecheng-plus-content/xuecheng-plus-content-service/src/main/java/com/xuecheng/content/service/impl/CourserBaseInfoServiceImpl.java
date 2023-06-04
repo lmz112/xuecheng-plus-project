@@ -68,7 +68,7 @@ public class CourserBaseInfoServiceImpl implements CourseBaseInfoService {
     public CourseBaseInfoDto createCourseBase(Long companyId, AddCourseDto addCourseDto) {
 
         // 1.1.参数合法性校验
-        if (StringUtils.isBlank(addCourseDto.getName())) {
+        /*if (StringUtils.isBlank(addCourseDto.getName())) {
              XueChengPlusException.cast("课程名称为空");
         }
         if (StringUtils.isBlank(addCourseDto.getMt())) {
@@ -88,7 +88,7 @@ public class CourserBaseInfoServiceImpl implements CourseBaseInfoService {
         }
         if (StringUtils.isBlank(addCourseDto.getCharge())) {
              XueChengPlusException.cast("收费规则为空");
-        }
+        }*/
 
         // 2.向课程信息基本表course_base写入数据
         // 2.1.新建CourseBase数据对象
@@ -126,7 +126,8 @@ public class CourserBaseInfoServiceImpl implements CourseBaseInfoService {
     }
 
     // 查询课程信息
-    private CourseBaseInfoDto getCourseBaseInfo(long courseId){
+    @Override
+    public CourseBaseInfoDto getCourseBaseInfo(Long courseId){
         // 从课程基本信息表查询
         CourseBase courseBase = courseBaseMapper.selectById(courseId);
         if (courseBase == null){

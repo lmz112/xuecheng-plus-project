@@ -1,5 +1,6 @@
 D:\java\code\xuecheng-plus-project\xuecheng-plus-base\src\main\java\com\xuecheng\base\model\PageParams.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-base\src\main\java\com\xuecheng\base\exception\GlobalExceptionHandler.java
+D:\java\code\xuecheng-plus-project\xuecheng-plus-base\src\main\java\com\xuecheng\base\exception\ValidationGroups.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-base\src\main\java\com\xuecheng\base\exception\CommonError.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-base\src\main\java\com\xuecheng\base\config\LocalDateTimeConfig.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-base\src\main\java\com\xuecheng\base\exception\RestErrorResponse.java
