@@ -1,5 +1,6 @@
 com\xuecheng\content\CourseMapperTests.class
 com\xuecheng\content\CourseCategoryMapperTests.class
 com\xuecheng\content\CourseCategoryServiceTests.class
+com\xuecheng\content\TeachPlanMapperTests.class
 com\xuecheng\content\CourseBaseInfoServiceTests.class
 com\xuecheng\ContentApplication.class

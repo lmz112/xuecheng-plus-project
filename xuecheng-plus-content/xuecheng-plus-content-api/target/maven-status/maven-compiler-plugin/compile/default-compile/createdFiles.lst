@@ -1,3 +1,4 @@
 com\xuecheng\content\api\CourseBaseInfoController.class
+com\xuecheng\content\api\TeachPlanController.class
 com\xuecheng\content\api\CourseCategoryController.class
 com\xuecheng\ContentApplication.class

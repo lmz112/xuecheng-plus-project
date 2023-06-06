@@ -5,6 +5,7 @@ import com.xuecheng.base.model.PageParams;
 import com.xuecheng.base.model.PageResult;
 import com.xuecheng.content.model.dto.AddCourseDto;
 import com.xuecheng.content.model.dto.CourseBaseInfoDto;
+import com.xuecheng.content.model.dto.EditCourseDto;
 import com.xuecheng.content.model.dto.QueryCourseParamsDto;
 import com.xuecheng.content.model.po.CourseBase;
 import com.xuecheng.content.service.CourseBaseInfoService;
@@ -55,4 +56,17 @@ public class CourseBaseInfoController {
 
         return courseBaseInfo;
     }
+
+    @ApiOperation("修改课程")
+    @PutMapping("/course")
+    public CourseBaseInfoDto modifyCourseBase(@RequestBody  @Validated(ValidationGroups.Update.class) EditCourseDto editCourseDto){
+        //获取用户所属机构的Id
+        Long companyId = 1232141425L;
+
+        CourseBaseInfoDto courseBaseInfoDto = courseBaseInfoService.updateCourseBase(companyId, editCourseDto);
+
+        return courseBaseInfoDto;
+    }
+
+
 }

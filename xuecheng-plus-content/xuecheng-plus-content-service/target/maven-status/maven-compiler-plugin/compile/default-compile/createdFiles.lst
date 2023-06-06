@@ -1,6 +1,7 @@
 com\xuecheng\content\mapper\TeachplanMediaMapper.class
 com\xuecheng\content\config\MybatisPlusConfig.class
 com\xuecheng\content\service\CourseBaseInfoService.class
+com\xuecheng\content\service\impl\TeachPlanServiceImpl.class
 com\xuecheng\content\mapper\CourseTeacherMapper.class
 com\xuecheng\content\mapper\TeachplanMapper.class
 com\xuecheng\content\service\CourseCategoryService.class
@@ -11,3 +12,4 @@ com\xuecheng\content\service\impl\CourserBaseInfoServiceImpl.class
 com\xuecheng\content\mapper\CourseBaseMapper.class
 com\xuecheng\content\mapper\CoursePublishMapper.class
 com\xuecheng\content\service\impl\CourseCategoryServiceImpl.class
+com\xuecheng\content\service\TeachPlanService.class

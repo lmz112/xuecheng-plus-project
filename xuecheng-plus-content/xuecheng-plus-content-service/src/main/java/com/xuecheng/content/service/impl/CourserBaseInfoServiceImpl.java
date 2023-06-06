@@ -10,6 +10,7 @@ import com.xuecheng.content.mapper.CourseCategoryMapper;
 import com.xuecheng.content.mapper.CourseMarketMapper;
 import com.xuecheng.content.model.dto.AddCourseDto;
 import com.xuecheng.content.model.dto.CourseBaseInfoDto;
+import com.xuecheng.content.model.dto.EditCourseDto;
 import com.xuecheng.content.model.dto.QueryCourseParamsDto;
 import com.xuecheng.content.model.po.CourseBase;
 import com.xuecheng.content.model.po.CourseCategory;
@@ -150,6 +151,51 @@ public class CourserBaseInfoServiceImpl implements CourseBaseInfoService {
         courseBaseInfoDto.setMtName(courseCategoryMt.getName());
 
         return courseBaseInfoDto;
+    }
+
+    @Override
+    public CourseBaseInfoDto updateCourseBase(Long companyId, EditCourseDto editCourseDto) {
+
+        // 1.查询课程信息
+        // 1.1.拿到课程id
+        Long courseId = editCourseDto.getId();
+        // 1.2.查询数据库
+        CourseBase courseBase = courseBaseMapper.selectById(courseId);
+        CourseMarket courseMarket = courseMarketMapper.selectById(courseId);
+        // 1.3.判断该课程是否存在
+        if (courseBase == null || courseMarket == null){
+            XueChengPlusException.cast("课程不存在");
+        }
+
+        // 2.数据合法性校验
+        // 2.1.本机构只能修改本机构的课程
+        if (!companyId.equals(courseBase.getCompanyId())){
+            XueChengPlusException.cast("本机构只能修改本机构的课程");
+        }
+
+        // 3.封装数据
+        // 3.1.copy数据
+        BeanUtils.copyProperties(editCourseDto, courseBase);
+        BeanUtils.copyProperties(editCourseDto, courseMarket);
+        // 3.2.设置修改时间
+        courseBase.setChangeDate(LocalDateTime.now());
+
+        // 4.更新数据库
+        // 4.1.更新基本信息
+        int i = courseBaseMapper.updateById(courseBase);
+        if (i <= 0){
+            XueChengPlusException.cast("修改课程失败");
+        }
+        // 4.2.更新营销信息
+        int i1 = saveCourseMarket(courseMarket);
+        if (i1 <= 0){
+            XueChengPlusException.cast("修改课程失败");
+        }
+
+        // 5.查询课程信息
+        CourseBaseInfoDto courseBaseInfo = getCourseBaseInfo(courseId);
+
+        return courseBaseInfo;
     }
 
     // 保存营销信息，逻辑：存在则更新，不存在则添加
