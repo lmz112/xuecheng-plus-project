@@ -1,0 +1,36 @@
+2023-06-07 10:34:20,271 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@42c47244 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@77a9ac36
+2023-06-07 10:34:20,271 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@42c47244 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@77a9ac36
+2023-06-07 10:34:20,815 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@4d604e78 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@77a9ac36
+2023-06-07 10:34:20,815 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@4d604e78 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@77a9ac36
+2023-06-07 10:34:28,296 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@6dbbcc0 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@77a9ac36
+2023-06-07 10:34:28,296 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@6dbbcc0 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@77a9ac36
+2023-06-07 10:34:30,281 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@717becb1 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@77a9ac36
+2023-06-07 10:34:30,281 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@717becb1 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@77a9ac36
+2023-06-07 10:49:42,611 WARN [Thread-15][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-07 10:49:42,611 WARN [Thread-21][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+2023-06-07 10:49:42,611 WARN [Thread-15][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-07 10:49:42,611 WARN [Thread-21][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+2023-06-07 10:49:42,611 DEBUG [SpringContextShutdownHook][AbstractApplicationContext.java:1006] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f2ce6b, started on Wed Jun 07 09:27:36 CST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1af1347d
+2023-06-07 10:49:42,611 DEBUG [SpringContextShutdownHook][AbstractApplicationContext.java:1006] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f2ce6b, started on Wed Jun 07 09:27:36 CST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1af1347d
+2023-06-07 10:49:42,611 WARN [Thread-21][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+2023-06-07 10:49:42,611 WARN [Thread-21][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+2023-06-07 10:49:42,612 WARN [Thread-15][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+2023-06-07 10:49:42,612 WARN [Thread-15][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+2023-06-07 10:49:42,613 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:369] - Stopping beans in phase 2147483647
+2023-06-07 10:49:42,613 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:369] - Stopping beans in phase 2147483647
+2023-06-07 10:49:42,613 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'documentationPluginsBootstrapper' completed its stop procedure
+2023-06-07 10:49:42,613 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'documentationPluginsBootstrapper' completed its stop procedure
+2023-06-07 10:49:42,615 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'webServerGracefulShutdown' completed its stop procedure
+2023-06-07 10:49:42,615 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'webServerGracefulShutdown' completed its stop procedure
+2023-06-07 10:49:42,615 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:369] - Stopping beans in phase 2147483646
+2023-06-07 10:49:42,615 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:369] - Stopping beans in phase 2147483646
+2023-06-07 10:49:42,928 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'webServerStartStop' completed its stop procedure
+2023-06-07 10:49:42,928 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'webServerStartStop' completed its stop procedure
+2023-06-07 10:49:42,928 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:369] - Stopping beans in phase 0
+2023-06-07 10:49:42,928 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:369] - Stopping beans in phase 0
+2023-06-07 10:49:42,928 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-07 10:49:42,928 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-07 10:49:42,928 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'nacosWatch' completed its stop procedure
+2023-06-07 10:49:42,928 DEBUG [SpringContextShutdownHook][DefaultLifecycleProcessor.java:242] - Bean 'nacosWatch' completed its stop procedure
+2023-06-07 10:49:42,929 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:94] - De-registering from Nacos Server now...
+2023-06-07 10:49:42,929 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:94] - De-registering from Nacos Server now...
