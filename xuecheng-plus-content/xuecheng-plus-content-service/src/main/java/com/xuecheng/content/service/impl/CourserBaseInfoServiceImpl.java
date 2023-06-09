@@ -5,17 +5,14 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.xuecheng.base.exception.XueChengPlusException;
 import com.xuecheng.base.model.PageParams;
 import com.xuecheng.base.model.PageResult;
-import com.xuecheng.content.mapper.CourseBaseMapper;
-import com.xuecheng.content.mapper.CourseCategoryMapper;
-import com.xuecheng.content.mapper.CourseMarketMapper;
+import com.xuecheng.content.mapper.*;
 import com.xuecheng.content.model.dto.AddCourseDto;
 import com.xuecheng.content.model.dto.CourseBaseInfoDto;
 import com.xuecheng.content.model.dto.EditCourseDto;
 import com.xuecheng.content.model.dto.QueryCourseParamsDto;
-import com.xuecheng.content.model.po.CourseBase;
-import com.xuecheng.content.model.po.CourseCategory;
-import com.xuecheng.content.model.po.CourseMarket;
+import com.xuecheng.content.model.po.*;
 import com.xuecheng.content.service.CourseBaseInfoService;
+import com.xuecheng.content.service.TeachPlanService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
@@ -38,6 +35,13 @@ public class CourserBaseInfoServiceImpl implements CourseBaseInfoService {
 
     @Resource
     CourseCategoryMapper courseCategoryMapper;
+
+    @Resource
+    CourseTeacherMapper courseTeacherMapper;
+
+    @Resource
+    TeachplanMapper teachplanMapper;
+
 
     @Override
     public PageResult<CourseBase> queryCourseBaseList(PageParams pageParams, QueryCourseParamsDto courseParamsDto) {
@@ -153,6 +157,7 @@ public class CourserBaseInfoServiceImpl implements CourseBaseInfoService {
         return courseBaseInfoDto;
     }
 
+    @Transactional
     @Override
     public CourseBaseInfoDto updateCourseBase(Long companyId, EditCourseDto editCourseDto) {
 
@@ -203,12 +208,12 @@ public class CourserBaseInfoServiceImpl implements CourseBaseInfoService {
         // 参数合法性校验
         String charge = courseMarketNew.getCharge();
         if (StringUtils.isEmpty(charge)){
-             XueChengPlusException.cast("收费规则为空");
+            XueChengPlusException.cast("收费规则为空");
         }
         // 如果课程收费，价格没有填写也需要抛出异常
         if (charge.equals("201001")){
             if (courseMarketNew.getPrice() == null || courseMarketNew.getPrice().floatValue() <= 0){
-                 XueChengPlusException.cast("课程的价格不能为空且必须大于0");
+                XueChengPlusException.cast("课程的价格不能为空且必须大于0");
             }
         }
 
@@ -229,4 +234,28 @@ public class CourserBaseInfoServiceImpl implements CourseBaseInfoService {
         }
 
     }
+
+    @Transactional
+    @Override
+    public void deleteById(Long companyId, Long courseId) {
+        CourseBase courseBase = courseBaseMapper.selectById(courseId);
+        if (!companyId.equals(courseBase.getCompanyId())){
+            XueChengPlusException.cast("只允许删除本机构的课程");
+        }
+        // 删除课程基本表
+        courseBaseMapper.deleteById(courseId);
+        // 删除营销信息
+        courseMarketMapper.deleteById(courseId);
+        // 删除课程计划
+        LambdaQueryWrapper<Teachplan> teachplanLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        teachplanLambdaQueryWrapper.eq(Teachplan::getCourseId, courseId);
+        teachplanMapper.delete(teachplanLambdaQueryWrapper);
+        // 删除课程讲师
+        LambdaQueryWrapper<CourseTeacher> teacherLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        teacherLambdaQueryWrapper.eq(CourseTeacher::getCourseId, courseId);
+        courseTeacherMapper.delete(teacherLambdaQueryWrapper);
+
+    }
+
+
 }

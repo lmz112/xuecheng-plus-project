@@ -39,4 +39,11 @@ public class TeachPlanController {
         teachPlanService.deleteTeachplan(id);
     }
 
+    @ApiOperation("课程计划移动接口")
+    @PostMapping("/teachplan/{move}/{id}")
+    public void moveTeachplan(@PathVariable String move, @PathVariable Long id){
+        teachPlanService.moveTeachplan(move, id);
+
+    }
+
 }

@@ -2,6 +2,7 @@ package com.xuecheng.content.service;
 
 import com.xuecheng.content.model.dto.SaverTeachPlanDto;
 import com.xuecheng.content.model.dto.TeachPlanDto;
+import com.xuecheng.content.model.po.CourseTeacher;
 
 import java.util.List;
 
@@ -27,4 +28,13 @@ public interface TeachPlanService {
      * @param id 课程计划id
      */
     public void deleteTeachplan(Long id);
+
+    /**
+     * 移动课程计划
+     * @param move  移动类型
+     * @param id    课程计划id
+     */
+    public void moveTeachplan(String move, Long id);
+
+
 }

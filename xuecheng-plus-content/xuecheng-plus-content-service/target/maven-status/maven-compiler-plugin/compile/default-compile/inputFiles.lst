@@ -9,7 +9,9 @@ D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-s
 D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\main\java\com\xuecheng\content\mapper\CoursePublishMapper.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\main\java\com\xuecheng\content\mapper\TeachplanMapper.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\main\java\com\xuecheng\content\config\MybatisPlusConfig.java
+D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\main\java\com\xuecheng\content\service\CourseTeacherService.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\main\java\com\xuecheng\content\mapper\CourseCategoryMapper.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\main\java\com\xuecheng\content\service\CourseBaseInfoService.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\main\java\com\xuecheng\content\mapper\CourseBaseMapper.java
+D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\main\java\com\xuecheng\content\service\impl\CourseTeacherServiceImpl.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\main\java\com\xuecheng\content\mapper\TeachplanMediaMapper.java

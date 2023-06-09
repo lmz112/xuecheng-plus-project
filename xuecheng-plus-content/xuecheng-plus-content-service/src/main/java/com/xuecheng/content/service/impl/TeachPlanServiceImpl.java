@@ -6,11 +6,13 @@ import com.xuecheng.content.mapper.TeachplanMapper;
 import com.xuecheng.content.mapper.TeachplanMediaMapper;
 import com.xuecheng.content.model.dto.SaverTeachPlanDto;
 import com.xuecheng.content.model.dto.TeachPlanDto;
+import com.xuecheng.content.model.po.CourseTeacher;
 import com.xuecheng.content.model.po.Teachplan;
 import com.xuecheng.content.model.po.TeachplanMedia;
 import com.xuecheng.content.service.TeachPlanService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -24,12 +26,14 @@ public class TeachPlanServiceImpl implements TeachPlanService {
     @Resource
     TeachplanMediaMapper teachplanMediaMapper;
 
+
     @Override
     public List<TeachPlanDto> findTeachPlanTree(Long courseId) {
         List<TeachPlanDto> teachPlanDtos = teachplanMapper.selectTreeNodes(courseId);
         return teachPlanDtos;
     }
 
+    @Transactional
     @Override
     public void saveTeachplan(SaverTeachPlanDto saverTeachPlanDto) {
         // 通过课程计划id判断是新增还是修改
@@ -51,6 +55,16 @@ public class TeachPlanServiceImpl implements TeachPlanService {
         }
     }
 
+    private Integer getTeachplanCount(SaverTeachPlanDto saverTeachPlanDto) {
+        Long parentid = saverTeachPlanDto.getParentid();
+        Long courseId = saverTeachPlanDto.getCourseId();
+        LambdaQueryWrapper<Teachplan> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper = queryWrapper.eq(Teachplan::getCourseId, courseId).eq(Teachplan::getParentid, parentid);
+        Integer count = teachplanMapper.selectCount(queryWrapper);
+        return count;
+    }
+
+    @Transactional
     @Override
     public void deleteTeachplan(Long id) {
         // 查询相课程计划
@@ -83,12 +97,45 @@ public class TeachPlanServiceImpl implements TeachPlanService {
 
     }
 
-    private Integer getTeachplanCount(SaverTeachPlanDto saverTeachPlanDto) {
-        Long parentid = saverTeachPlanDto.getParentid();
-        Long courseId = saverTeachPlanDto.getCourseId();
-        LambdaQueryWrapper<Teachplan> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper = queryWrapper.eq(Teachplan::getCourseId, courseId).eq(Teachplan::getParentid, parentid);
-        Integer count = teachplanMapper.selectCount(queryWrapper);
-        return count;
+    @Override
+    public void moveTeachplan(String move, Long id) {
+        // 查询课程计划
+        Teachplan teachplan = teachplanMapper.selectById(id);
+        // 判断该节点是否为第一个
+        Integer orderby = teachplan.getOrderby();
+        move(teachplan, move);
     }
+
+    private void move(Teachplan teachplan, String code){
+        // 获取排序字段
+        Integer orderby = teachplan.getOrderby();
+
+        // 判断是上移还是下移
+        if (code.equals("moveup")){
+            if (orderby > 0){
+                orderby --;
+            }else{
+                return;
+            }
+        }else{
+            orderby ++;
+        }
+
+        // 查询出该节点上面的节点
+        LambdaQueryWrapper<Teachplan> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(Teachplan::getCourseId, teachplan.getCourseId())
+                .eq(Teachplan::getOrderby, orderby)
+                .eq(Teachplan::getParentid, teachplan.getParentid());
+        Teachplan teachplanUP = teachplanMapper.selectOne(queryWrapper);
+        // 将下一节点的排序值设为当前节点的  之所以重新获取是因为orderby已经更改
+        teachplanUP.setOrderby(teachplan.getOrderby());
+        teachplan.setOrderby(orderby);
+        // 修改数据库库
+        teachplanMapper.updateById(teachplanUP);
+        teachplanMapper.updateById(teachplan);
+    }
+
+
+
+
 }
