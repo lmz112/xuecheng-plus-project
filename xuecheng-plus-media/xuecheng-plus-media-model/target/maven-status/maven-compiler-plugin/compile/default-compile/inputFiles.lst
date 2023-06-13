@@ -1,5 +1,7 @@
 D:\java\code\xuecheng-plus-project\xuecheng-plus-media\xuecheng-plus-media-model\src\main\java\com\xuecheng\media\model\po\MediaProcess.java
+D:\java\code\xuecheng-plus-project\xuecheng-plus-media\xuecheng-plus-media-model\src\main\java\com\xuecheng\media\model\dto\UploadFileParamsDto.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-media\xuecheng-plus-media-model\src\main\java\com\xuecheng\media\model\po\MediaFiles.java
+D:\java\code\xuecheng-plus-project\xuecheng-plus-media\xuecheng-plus-media-model\src\main\java\com\xuecheng\media\model\dto\UploadFileResultDto.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-media\xuecheng-plus-media-model\src\main\java\com\xuecheng\media\model\po\MqMessage.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-media\xuecheng-plus-media-model\src\main\java\com\xuecheng\media\model\dto\QueryMediaParamsDto.java
 D:\java\code\xuecheng-plus-project\xuecheng-plus-media\xuecheng-plus-media-model\src\main\java\com\xuecheng\media\model\po\MediaProcessHistory.java

@@ -1,5 +1,6 @@
 com\xuecheng\media\config\MybatisPlusConfig.class
 com\xuecheng\media\mapper\MqMessageHistoryMapper.class
+com\xuecheng\media\config\MinioConfig.class
 com\xuecheng\media\mapper\MediaProcessHistoryMapper.class
 com\xuecheng\media\mapper\MqMessageMapper.class
 com\xuecheng\media\mapper\MediaProcessMapper.class
