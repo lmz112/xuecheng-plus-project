@@ -4,41 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5180d205-3763-4e03-a89f-23552f7e5caa" name="Default Changelist" comment="媒资管理模块">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_thirdparty_simple_xml_safe_2_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_4_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_minio_minio_8_4_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_69.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_3_72.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_8_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="5180d205-3763-4e03-a89f-23552f7e5caa" name="Default Changelist" comment="上传图片">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c97162b6-28a7-4506-861f-fe067d9d7f54.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c97162b6-28a7-4506-861f-fe067d9d7f54.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/src/main/java/com/xuecheng/media/api/MediaFilesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/src/main/java/com/xuecheng/media/api/MediaFilesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/classes/com/xuecheng/media/api/MediaFilesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/classes/com/xuecheng/media/api/MediaFilesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-base/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-base/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-base/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-base/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-base/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-base/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-base/target/xuecheng-plus-base.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-base/target/xuecheng-plus-base.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/classes/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/xuecheng-plus-media-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/target/xuecheng-plus-media-api.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/xuecheng-plus-media-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-api/xuecheng-plus-media-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-model/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-model/target/xuecheng-plus-media-model.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/src/main/java/com/xuecheng/media/service/MediaFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/src/main/java/com/xuecheng/media/service/MediaFileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/src/main/java/com/xuecheng/media/service/impl/MediaFileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/src/main/java/com/xuecheng/media/service/impl/MediaFileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/service/MediaFileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/service/MediaFileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/service/impl/MediaFileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/service/impl/MediaFileServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/xuecheng-plus-media-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/xuecheng-plus-media-service.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/xuecheng-plus-media-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/xuecheng-plus-media-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-system/xuecheng-plus-system-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-system/xuecheng-plus-system-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/src/test/java/com/xuecheng/media/MinioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/src/test/java/com/xuecheng/media/MinioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/config/MinioConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/config/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/mapper/MediaFilesMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/mapper/MediaFilesMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/mapper/MediaProcessHistoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/mapper/MediaProcessHistoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/mapper/MediaProcessMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/mapper/MediaProcessMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/mapper/MqMessageHistoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/mapper/MqMessageHistoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/mapper/MqMessageMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/mapper/MqMessageMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/service/MediaFileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/com/xuecheng/media/service/impl/MediaFileServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/classes/log4j2-dev.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/surefire-reports/TEST-com.xuecheng.media.MinioTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/test-classes/com/xuecheng/MediaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/test-classes/com/xuecheng/media/MinioTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/target/xuecheng-plus-media-service.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +107,7 @@
     </option>
   </component>
   <component name="MavenRunner">
-    <option name="delegateBuildToMaven" value="true" />
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="2QT8v79GUaRoFMQQXEiXc0l0Jk5" />
   <component name="ProjectViewState">
@@ -120,22 +127,25 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/xuecheng-plus-media/xuecheng-plus-media-service/src/test/java/com/xuecheng" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xuecheng-plus-gateway/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xxl-job-2.3.1" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21363038" />
     <property name="rest.client.default.execution.environment" value="dev" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\code\xuecheng-plus-project\xuecheng-plus-base\src\main\java\com\xuecheng\base" />
       <recent name="D:\java\code\xuecheng-plus-project\xuecheng-plus-gateway\src\main\resources" />
       <recent name="D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\main\resources" />
       <recent name="D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-model\src\main\java\com\xuecheng\content\model\dto" />
       <recent name="D:\java\code\xuecheng-plus-project\xuecheng-plus-system\xuecheng-plus-system-service\src\main\resources" />
-      <recent name="D:\java\code\xuecheng-plus-project\xuecheng-plus-content\xuecheng-plus-content-service\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xuecheng.content" />
@@ -149,19 +159,21 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MinioTest.test_upload">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+  <component name="RunManager" selected="Application.Mp4VideoUtil">
+    <configuration name="Mp4VideoUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xuecheng.base.utils.Mp4VideoUtil" />
+      <module name="xuecheng-plus-base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuecheng.base.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinioTest.test_upload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BigFileTest.testMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xuecheng-plus-media-service" />
       <extension name="coverage">
         <pattern>
@@ -170,22 +182,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.xuecheng.media" />
-      <option name="MAIN_CLASS_NAME" value="com.xuecheng.media.MinioTest" />
-      <option name="METHOD_NAME" value="test_upload" />
+      <option name="MAIN_CLASS_NAME" value="com.xuecheng.media.BigFileTest" />
+      <option name="METHOD_NAME" value="testMerge" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="xuecheng-plus-content-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xuecheng.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuecheng.ContentApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,19 +239,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.MinioTest.test_upload" />
+      <item itemvalue="Application.Mp4VideoUtil" />
+      <item itemvalue="JUnit.BigFileTest.testMerge" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.MediaApplication" />
-      <item itemvalue="Spring Boot.ContentApplication" />
       <item itemvalue="Spring Boot.SystemApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MinioTest.test_upload" />
+        <item itemvalue="Application.Mp4VideoUtil" />
         <item itemvalue="Spring Boot.MediaApplication" />
         <item itemvalue="Spring Boot.SystemApplication" />
-        <item itemvalue="Spring Boot.ContentApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="JUnit.BigFileTest.testMerge" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +293,11 @@
       <workItem from="1686399637318" duration="5000" />
       <workItem from="1686444011102" duration="3535000" />
       <workItem from="1686480645970" duration="1894000" />
-      <workItem from="1686617775789" duration="12972000" />
+      <workItem from="1686617775789" duration="13783000" />
+      <workItem from="1686704656595" duration="8414000" />
+      <workItem from="1687315719831" duration="3268000" />
+      <workItem from="1687568812503" duration="10675000" />
+      <workItem from="1687824336723" duration="12425000" />
     </task>
     <task id="LOCAL-00001" summary="课程管理模块">
       <created>1685433020710</created>
@@ -380,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686291309501</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="上传图片">
+      <created>1686649153738</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686649153738</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +418,8 @@
     <MESSAGE value="删除课程计划" />
     <MESSAGE value="课程管理模块" />
     <MESSAGE value="媒资管理模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="媒资管理模块" />
+    <MESSAGE value="上传图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传图片" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

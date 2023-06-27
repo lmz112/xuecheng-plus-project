@@ -26,4 +26,9 @@ spring:
             refresh: true
   profiles:
     active: dev
+#  注意！！！！！！！！！！！！！默认大小为1MB  需要更改
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
 

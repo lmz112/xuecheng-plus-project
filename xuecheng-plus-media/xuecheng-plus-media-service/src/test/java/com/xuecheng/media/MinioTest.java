@@ -16,7 +16,6 @@ import java.io.FilterInputStream;
 /**
  * 测试minio的sdk
  */
-@SpringBootTest
 public class MinioTest {
 
     MinioClient minioClient =
